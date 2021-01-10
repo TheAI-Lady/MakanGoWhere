@@ -1,19 +1,9 @@
 
 //This function is to call the restaurant api and get all the restaurants
 function getRestaurantData() {
-    var request = new XMLHttpRequest();
-    request.open('GET', "/restaurants", true);
-
-    //This function will be called when data returns from the web api
-    request.onload = function () {
-        // get all the restaurant records into our restaurant array
-        restaurant_array = JSON.parse(request.responseText);
-        // TODO get reviews
-        // fetchComments();
-        displayRestaurants("all", restaurant_array);
-    };
-    //This command starts the calling of the restaurants web api
-    request.send();
+    var res = alasql("SELECT * FROM restaurants");
+    // console.log(res); // NOTE: res is "unreadable" if concatenated with a string in console.log()!
+    restaurant_array = res;
 }
 
 //This function is to display the restaurants list
