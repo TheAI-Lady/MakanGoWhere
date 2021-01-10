@@ -18,7 +18,7 @@ function displayRestaurants(district, restaurant_list) {
         if (district == "all" || district == restaurant_list[count].restaurant_district.trim()) {
             var restaurant = restaurant_list[count];
             //restaurant_list.forEach(function (restaurant, index) {
-                var thumbnail = "/images/Restaurants/" + restaurant.restaurant_id + ".jpg";
+                var thumbnail = "images/Restaurants/" + restaurant.restaurant_id + ".jpg";
                 var cell = '<div class="col-md-3" style="float: none; margin: 0 auto;">' +
                     '<div class="flip-container" >' +
                     '<div class="flipper">' +

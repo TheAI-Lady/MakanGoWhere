@@ -1,6 +1,7 @@
-alasql("CREATE TABLE restaurants (name STRING, address STRING, restaurant_district STRING, cuisine STRING, opening_hours STRING, phone_number STRING, website STRING, google_maps_link STRING)");
+alasql("CREATE TABLE restaurants (restaurant_id INT NOT NULL PRIMARY KEY AUTO_INCREMENT, name STRING, address STRING, restaurant_district STRING, cuisine STRING, opening_hours STRING, phone_number STRING, website STRING, google_maps_link STRING)");
 alasql.tables.restaurants.data = [
     {   
+        restaurant_id: 1,
         name: 'iO Italian Osteria',
         address: '4 Hillview Rise Hill V2 Singapore 667979',
         restaurant_district: 'Bukit Batok',
@@ -11,6 +12,7 @@ alasql.tables.restaurants.data = [
         google_maps_link: '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.6894555487015!2d103.76231221426535!3d1.3629887619139576!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da1053aa50898d%3A0xc66016df53793535!2siO%20Italian%20Osteria%20Singapore!5e0!3m2!1sen!2ssg!4v1607763975885!5m2!1sen!2ssg" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>'
     },
     {   
+        restaurant_id: 2,
         name: 'The Naked Finn', 
         address: '39 Malan Rd,Gilman barracks,singapore 109442',
         restaurant_district: 'Queenstown',
@@ -21,6 +23,7 @@ alasql.tables.restaurants.data = [
         google_maps_link: '<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15955.314033379!2d103.8044554!3d1.2762813!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xbb7790db0449f5f!2sNaked%20Finn!5e0!3m2!1sen!2ssg!4v1607766713826!5m2!1sen!2ssg" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>',
     },
     {
+        restaurant_id: 3,
         name: 'Heart of Darkness Singapore',
         address: '1 Keong Saik Rd, Singapore 089109',
         restaurant_district: 'Tanjong Pagar',
@@ -31,6 +34,7 @@ alasql.tables.restaurants.data = [
         google_maps_link: '<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15955.297660015913!2d103.8414072!3d1.2789177!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x48ffb80c07f4cda5!2sHeart%20of%20Darkness%20Singapore!5e0!3m2!1sen!2ssg!4v1607766878542!5m2!1sen!2ssg" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>'
     },
     {
+        restaurant_id: 4,
         name: 'Burnt Ends',
         address: '20 Teck Lim Rd, Singapore 088391',
         restaurant_district: 'Outram Park',
@@ -41,6 +45,7 @@ alasql.tables.restaurants.data = [
         google_maps_link: '<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15955.287549257317!2d103.8418394!3d1.280543!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb324b3b59b409d43!2sBurnt%20Ends!5e0!3m2!1sen!2ssg!4v1607766929412!5m2!1sen!2ssg" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>'
     },
     {
+        restaurant_id: 5,
         name: 'Pietrasanta',
         address: '1 Fusionopolis Way #01-08 Connexis Connexis Tower, Singapore 138632',
         restaurant_district: 'Queenstown',
@@ -51,6 +56,7 @@ alasql.tables.restaurants.data = [
         google_maps_link: '<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15955.174582820824!2d103.7879226!3d1.298564!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x536fd14711fcb2!2sPietrasanta%20The%20Italian%20Restaurant!5e0!3m2!1sen!2ssg!4v1607766967062!5m2!1sen!2ssg" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>'
     },
     {
+        restaurant_id: 6,
         name: 'Jiak Modern Tzechar @ Hillview',
         address: '4 Hillview Rise, #02-04, Singapore 667979',
         restaurant_district: 'Bukit Batok',
@@ -61,6 +67,7 @@ alasql.tables.restaurants.data = [
         google_maps_link: '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.688749429052!2d103.76241441457263!3d1.3634149990056192!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da1052bd47fb13%3A0x477301144ebcf073!2sJiak%20Modern%20Tzechar%20%40%20Hillview!5e0!3m2!1sen!2ssg!4v1607767111184!5m2!1sen!2ssg" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>'
     },
     {
+        restaurant_id: 7,
         name: 'Humpback',
         address: '20 Bukit Pasoh Rd',
         restaurant_district: 'Tanjong Pagar',
@@ -71,6 +78,7 @@ alasql.tables.restaurants.data = [
         google_maps_link: '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.8240127308463!2d103.8386352145726!3d1.279176499067008!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da196d8dfe3df5%3A0xb586c57168be44b0!2sHumpback!5e0!3m2!1sen!2ssg!4v1607767172307!5m2!1sen!2ssg" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>'
     },
     {
+        restaurant_id: 8,
         name: 'Potato Head Singapore',
         address: '36 Keong Saik Rd, Singapore 089143',
         restaurant_district: 'Outram Park',
