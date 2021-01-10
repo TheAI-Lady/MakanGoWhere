@@ -4,6 +4,7 @@ function getRestaurantData() {
     var res = alasql("SELECT * FROM restaurants");
     // console.log(res); // NOTE: res is "unreadable" if concatenated with a string in console.log()!
     restaurant_array = res;
+    displayRestaurants("all", restaurant_array);
 }
 
 //This function is to display the restaurants list

@@ -84,5 +84,5 @@ function loginFunction()
                 alert("Incorrect Username or Password");
             }
         }
-
+    }
 }
