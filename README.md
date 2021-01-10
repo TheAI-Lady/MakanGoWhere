@@ -7,3 +7,5 @@ Food review website
 
 ## Development Instructions
 1) Clone this repository and run `node server.js`
+
+###### This file was edited with https://stackedit.io/
