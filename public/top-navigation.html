@@ -1,0 +1,43 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<nav class="navbar navbar-expand-md navbar-dark bg-pink">
+    <div class="navbar-brand">
+        <img src="images/makan.png" width="140" height="120" class="d-inline-block align-top" alt="">
+        <!-- <h3 class="d-inline-block"><i>website name</i></h3>-->
+
+    </div>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navSupportedContent">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navSupportedContent">
+        <ul class="navbar-nav">
+            <li class="nav-item" id="Home">
+                <a class="nav-link" href="./index.html" id="home">
+                    <i class="fas fa-hamburger"></i> Home</a>
+            </li>
+            <li class=" nav-item dropdown ">
+                <a class="nav-link dropdown-toggle" href="# " id="navbardrop" data-toggle="dropdown"><i
+                        class="fas fa-hotdog"></i>
+                    Restaurants</i></a>
+                <div class="dropdown-menu bg-cream">
+                    <a class="dropdown-item" href="#" onclick="displayTanjongPagar('Tanjong Pagar')">Tanjong Pagar</a>
+                    <a class="dropdown-item" href="#" onclick="displayTanjongPagar('Bukit Batok')">Bukit Batok</a>
+                    <a class="dropdown-item" href="#" onclick="displayTanjongPagar('Queenstown')">Queenstown</a>
+                    <a class="dropdown-item" href="#" onclick="displayTanjongPagar('Outram Park')">Outram Park</a>
+                    </div>
+            </li>
+
+
+            <li class="nav-item" id="about">
+                <a class="nav-link" href="#" id="about" data-toggle="modal" data-target="#aboutModal">
+                    <i class="fas fa-pepper-hot"></i>About</a>
+            </li>
+        </ul>
+    </div>
+        <a href="./login-modal.html" id="login" button class="button" style="vertical-align:middle" data-toggle="modal" data-target="#loginModal"><i class="fas fa-pizza-slice"></i><span>Login
+        </span></button>
+        <a href="./signup-modal.html" id="signup" button class="button" style="vertical-align:middle"
+        data-toggle="modal" data-target="#signupModal"><i class="fas fa-bacon"></i><span>Signup</span></button>
+    
+
+  
