@@ -1,6 +1,7 @@
 
 # MakanGoWhere
 Food review website
+Demo site: https://theai-lady.github.io/MakanGoWhere/
 
 ## Requirements
 1) NodeJS
